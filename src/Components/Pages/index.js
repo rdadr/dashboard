@@ -1,11 +1,11 @@
+import Sidebar from './Sidebar'
 import Overview from './Overview'
 import Tickets from './Tickets'
-import Sidebar from './Sidebar'
 
 
 export {
+  Sidebar,
   Overview,
   Tickets,
-  Sidebar,
 }
 

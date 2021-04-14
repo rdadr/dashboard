@@ -1,13 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Sidebar from '../Sidebar'
 
-export default function Tickets() {
+const Tickets = () =>{
   return (
     <div>
-     Tickets<br/>
-     <Link to={'/overview'}>Overview</Link><br/>
-      <Link to={'/tickets'}>Tickets</Link><br/>
+      <Sidebar />
+     <h1>Tickets</h1>
     </div>
   )
 }
-
+export default Tickets

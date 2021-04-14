@@ -1,14 +1,17 @@
-import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import MainRouter from './Routes'
+import React from 'react';
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import Overview from './Components/Pages/Overview';
+import Tickets from './Components/Pages/Tickets';
 import './App.css';
 
-function App() {
+const App = ()=> {
   return (
-    <Router>
-      <MainRouter/>
-    </Router>
+    <BrowserRouter >
+    <Switch>
+      <Route path="/overview" exact component={Overview} />
+      <Route path="/tickets" component={Tickets} />
+    </Switch>
+    </BrowserRouter>
   );
 }
-
 export default App;

@@ -5,7 +5,6 @@ import { Overview, Tickets, Sidebar } from './Components/Pages'
 export default function MainRouter() {
   return (
     <Switch>
-      
       <Route path={'/tickets'}>
         <Tickets/>
       </Route>

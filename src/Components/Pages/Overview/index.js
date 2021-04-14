@@ -1,13 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Sidebar from '../Sidebar'
 
-export default function Overview() {
+const Overview = () =>{
   return (
     <div>
-     <h1>Overview<br/></h1>
-     <Link to={'/overview'}>Overview</Link><br/>
-      <Link to={'/tickets'}>Tickets</Link><br/>
+      <Sidebar />
+     <h1>Overview</h1>
     </div>
   )
 }
-
+export default Overview
