@@ -6,6 +6,7 @@ const Tickets = () =>{
     <div>
       <Sidebar />
      <h1>Tickets</h1>
+     
     </div>
   )
 }

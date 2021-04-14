@@ -12,6 +12,7 @@
 .container {
 	max-width: 255px;
 	width: 100%;
+
 	min-height: calc(100vh - 80px);
 
 	border-right: 2px solid var(--blue);
@@ -41,7 +42,7 @@
 
 
 .redirect-btn {
-	padding: 2px 0px;
+	padding: 10px 0px;
 
 	color: var(--white);
 
@@ -60,4 +61,8 @@
 
 .main-content {
 	flex-basis: 80%;
+}
+
+i {
+	margin-right: 25px;
 }
