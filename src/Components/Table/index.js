@@ -1,25 +1,48 @@
 import React from 'react';
-import TableRow from './TableRow';
-import TableHeadItem from './TableHeadItem';
-// import Style from './Table.module.css'
+import Table from './Table';
+import Style from './Table.module.css'
 
-const Table = ({theadData, tbodyData, customClass}) =>{
+const TableTickets = () =>{
+    const theadData = [" ", "Ticket details", "Castomer name", "Date", "Priority"];
+
+    const tbodyData = [
+        {
+            id: "1",
+            items: [
+                " ",
+                "Contact Email not Linked",
+                "Tom Cruise",
+                "May 26, 2019",
+                "high"
+            ],
+        },
+        {
+            id: "2",
+            items: [
+                " ",
+                "Adding Images to Featured Posts",
+                "Mett Damon",
+                "May 26, 2019",
+                "low"
+            ],
+        },
+        {
+            id: "3",
+            items: [
+                " ",
+                "When will I be charged this month",
+                "Robert Downey",
+                "May 26, 2019",
+                "normal"
+            ],
+        },
+    ];
+    
     return (
-         <table className={customClass}>
-             <thead>
-                 <tr>
-                    {theadData.map((h)=>{
-                        return <TableHeadItem key={h} />;
-                    })}
-                 </tr>
-             </thead>
-             <tbody>
-                 {tbodyData.map((item) =>{
-                     return <TableRow key={item.id} data={item.items} />;
-                 })}
-             </tbody>
-         </table>  
+        <div className = {Style.root}>
+            <Table theadData={theadData} tbodyData={tbodyData} />
+        </div>
     );
 }
 
-export default Table
+export default TableTickets;
