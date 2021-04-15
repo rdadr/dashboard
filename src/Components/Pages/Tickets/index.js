@@ -8,6 +8,6 @@ const Tickets = () =>{
      <h1>Tickets</h1>
      
     </div>
-  )
+  );
 }
 export default Tickets
